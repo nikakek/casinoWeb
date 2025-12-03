@@ -51,6 +51,21 @@ export default function CardSection() {
   return (
     <>
       <style>{`
+        @keyframes borderShine {
+          0% {
+            border-color: rgba(255, 215, 0, 0.3);
+            box-shadow: 0 0 20px rgba(255, 215, 0, 0.2);
+          }
+          50% {
+            border-color: rgba(255, 215, 0, 0.6);
+            box-shadow: 0 0 30px rgba(255, 215, 0, 0.4);
+          }
+          100% {
+            border-color: rgba(255, 215, 0, 0.3);
+            box-shadow: 0 0 20px rgba(255, 215, 0, 0.2);
+          }
+        }
+
         .cards-container {
           position: relative;
           margin-top: -120px;
@@ -95,10 +110,15 @@ export default function CardSection() {
           transition: all 0.4s ease;
           opacity: ${isVisible ? 1 : 0};
           transform: ${isVisible ? 'translateY(0)' : 'translateY(20px)'};
+          /* Shiny border that animates continuously */
+          border: 1px solid rgba(255, 215, 0, 0.4);
+          animation: borderShine 3s ease-in-out infinite;
         }
 
         .card:hover {
           transform: translateY(-8px);
+          border-color: rgba(255, 215, 0, 0.8);
+          box-shadow: 0 0 50px rgba(255, 215, 0, 0.6);
         }
 
         @media (max-width: 640px) {
@@ -167,8 +187,8 @@ export default function CardSection() {
 
         .card:hover .card-glass {
           background: rgba(255, 255, 255, 0.1);
-          border-color: rgba(255, 215, 0, 0.3);
-          box-shadow: 0 8px 32px rgba(255, 215, 0, 0.2);
+          border-color: rgba(255, 215, 0, 0.4);
+          box-shadow: 0 8px 32px rgba(255, 215, 0, 0.25);
         }
 
         .card-title {
