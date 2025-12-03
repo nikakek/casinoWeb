@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 const BlogsSection = () => {
   return (
-    <section className="relative py-20 sm:py-24 md:py-32 px-4 sm:px-6 lg:px-8 overflow-hidden">
+<section className="relative py-8 px-4 sm:px-6 lg:px-8 overflow-hidden flex h-screen items-center">
 
       <div className="relative z-10 max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
@@ -67,7 +67,7 @@ const BlogsSection = () => {
                 />
 
                 {/* Overlay gradient */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>             
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
               </div>
             </div>
           </div>

@@ -34,9 +34,9 @@ const PartnersSection = () => {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 py-20 sm:py-24 md:py-32 from-black to-gray-900">
-      
+
       {/* Section Title */}
-      <div className="relative z-10 w-full max-w-7xl mx-auto">
+      <div className="relative z-10 w-full max-w-7xl mx-auto h-screen flex items-center justify-between">
         <style jsx global>{`
           @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&display=swap');
 
@@ -83,11 +83,11 @@ const PartnersSection = () => {
           }
         `}</style>
 
-        <div className="text-center mb-16 sm:mb-20">
+        <div className="text-center ">
           <h2 className="font-cinzel font-black text-4xl sm:text-5xl md:text-6xl lg:text-7xl mb-6 gold-shimmer uppercase tracking-tight">
             Our Partners
           </h2>
-          
+
           {/* Decorative line */}
           <div className="flex items-center justify-center gap-4 mb-6">
             <div className="h-px w-24 md:w-32 bg-gradient-to-r from-transparent to-yellow-500"></div>
@@ -103,8 +103,8 @@ const PartnersSection = () => {
         {/* Diamond Grid */}
         <div className="flex flex-col items-center gap-6 sm:gap-8 md:gap-10">
           {socialLinks.map((row, rowIndex) => (
-            <div 
-              key={rowIndex} 
+            <div
+              key={rowIndex}
               className="flex items-center justify-center gap-6 sm:gap-8 md:gap-12"
             >
               {row.map((social, index) => {
@@ -120,10 +120,10 @@ const PartnersSection = () => {
                   >
                     {/* Glow effect */}
                     <div className="absolute inset-0 rounded-full bg-yellow-500/0 group-hover:bg-yellow-500/10 transition-all duration-300"></div>
-                    
+
                     {/* Icon */}
                     <Icon className="w-7 h-7 sm:w-9 sm:h-9 md:w-11 md:h-11 text-gray-300 group-hover:text-white transition-colors duration-300 relative z-10" />
-                    
+
                     {/* Tooltip */}
                     <span className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 text-xs sm:text-sm text-gray-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
                       {social.name}

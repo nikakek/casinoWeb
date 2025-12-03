@@ -20,7 +20,7 @@ const Footer = () => {
     };
 
     return (
-        <footer className="relative from-gray-900 to-black border-t border-yellow-500/20">
+        <footer className="relative from-gray-900 to-black border-t border-yellow-500/20 pt-16 px-8 pb-8">
             <style jsx global>{`
         @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&display=swap');
 
@@ -61,7 +61,7 @@ const Footer = () => {
                 </button>
             )}
 
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 pb-0">
                 {/* Main Footer Content */}
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
 
