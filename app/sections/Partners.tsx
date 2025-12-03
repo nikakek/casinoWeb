@@ -36,7 +36,7 @@ const PartnersSection = () => {
     <section className="relative min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 py-20 sm:py-24 md:py-32 from-black to-gray-900">
 
       {/* Section Title */}
-      <div className="relative z-10 w-full max-w-7xl mx-auto h-screen flex items-center justify-between">
+      <div className="relative z-10 w-full max-w-7xl mx-auto h-screen flex items-center justify-between max-lg:flex-col max-lg:justify-evenly">
         <style jsx global>{`
           @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&display=swap');
 
