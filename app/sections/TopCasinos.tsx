@@ -85,7 +85,7 @@ export default function TopCasinos() {
 
         {/* SEE ALL CASINOS Button */}
         <div className="mt-20 text-center">
-          <Link href="/all-casinos" className="inline-block">
+          <Link href="/topCasinos" className="inline-block">
             <div
               className="relative px-12 py-6 rounded-2xl font-bold text-black text-xl tracking-wider shadow-2xl transition-all duration-300 hover:shadow-yellow-500/60 hover:scale-105 cursor-pointer"
               style={{
